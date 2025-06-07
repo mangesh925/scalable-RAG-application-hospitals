@@ -7,7 +7,8 @@
     "dev": "node --watch api/index.js",
     "dev:worker": "node --watch worker.js",
     "start": "node api/index.js",
-    "build": "npm install"
+    "build": "mkdir -p public && echo '{\"status\": \"Hospital RAG Server\"}' > public/index.json"
+
   },
   "author": "",
   "license": "ISC",
