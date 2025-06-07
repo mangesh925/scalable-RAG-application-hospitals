@@ -22,7 +22,7 @@ const FileUploadComponent: React.FC = () => {
             const formData = new FormData();
             formData.append('pdf', file);
 
-            const response = await fetch('http://localhost:8000/upload/pdf', {
+            const response = await fetch('https://scalable-rag-application-hospitals-woad.vercel.app/upload/pdf', {
               method: 'POST',
               body: formData,
             });
@@ -47,7 +47,7 @@ const FileUploadComponent: React.FC = () => {
 
   const handleClearDocument = async () => {
     try {
-      const response = await fetch('http://localhost:8000/clear-document', {
+      const response = await fetch('https://scalable-rag-application-hospitals-woad.vercel.app/clear-document', {
         method: 'DELETE',
       });
       if (response.ok) {

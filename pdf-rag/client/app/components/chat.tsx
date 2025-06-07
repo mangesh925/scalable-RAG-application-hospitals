@@ -38,7 +38,7 @@ const ChatComponent: React.FC = () => {
     setIsLoading(true);
 
     try {
-      const res = await fetch(`http://localhost:8000/chat?message=${encodeURIComponent(userMessage)}`);
+      const res = await fetch(`https://scalable-rag-application-hospitals-woad.vercel.app/chat?message=${encodeURIComponent(userMessage)}`);
       const data = await res.json();
       
       setMessages((prev) => [
