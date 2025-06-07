@@ -2,16 +2,16 @@
   "name": "server",
   "version": "1.0.0",
   "type": "module",
-  "main": "index.js",
+  "main": "api/index.js",
   "scripts": {
-    "dev": "node --watch index.js",
+    "dev": "node --watch api/index.js",
     "dev:worker": "node --watch worker.js",
-    "start": "node index.js",
-    "build": "echo 'No build step required'"
+    "start": "node api/index.js",
+    "build": "npm install"
   },
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "Hospital RAG System Server",
   "dependencies": {
     "@langchain/community": "^0.3.45",
     "@langchain/core": "^0.3.57",

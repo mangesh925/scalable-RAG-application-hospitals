@@ -1,7 +1,15 @@
 {
     "$schema": "https://openapi.vercel.sh/vercel.json",
-    "framework": null,
-    "buildCommand": "npm install",
-    "outputDirectory": "."
+    "functions": {
+      "api/index.js": {
+        "runtime": "nodejs18.x"
+      }
+    },
+    "rewrites": [
+      {
+        "source": "/(.*)",
+        "destination": "/api/index.js"
+      }
+    ]
   }
   
